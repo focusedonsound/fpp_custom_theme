@@ -13,7 +13,6 @@
 
 $menuEntries = Array(
 	Array(
-		'text' => 'Template - Status',
 		'type' => 'status',
 		'page' => 'status.php',
 		'wrap' => 1
