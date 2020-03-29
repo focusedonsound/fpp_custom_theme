@@ -39,7 +39,6 @@ $menuEntries = Array(
 	Array(
 		'text' => 'Template - Home',
 		'type' => 'help',
-		'page' => 'https://github.com/FalconChristmas/fpp-plugin-Template',
 		'page' => 'https://github.com/focusedonsound/fpp_custom_theme',
 		'wrap' => 1
 	),
