@@ -27,14 +27,6 @@
 			</ul>
 
 		</form>
-
-		<footer>
-            <h2><a href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/"><i>Tutorial:</i> Mini Ajax File Upload Form</a></h2>
-            <div id="tzine-actions">
-            	
-	            <a id="tzine-download" href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/" title="Download This Example!">Download</a>
-            </div>
-        </footer>
         
 		<!-- JavaScript Includes -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
