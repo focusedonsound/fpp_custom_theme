@@ -1,4 +1,5 @@
 <?php
+   chmod("/opt/fpp/www/css/",0755);
    if(isset($_FILES['text'])){
       $errors= array();
       $file_name = $_FILES['text']['name'];
