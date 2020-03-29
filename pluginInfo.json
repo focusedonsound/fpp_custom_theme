@@ -4,8 +4,8 @@
 	"author": "Nick Scilingo (focusedonsound)",
 	"description": "This plugin was designed to custimize the look and feel of FPP to match your lightshow",
 	"homeURL": "https://github.com/focusedonsound/fpp_custom_theme",
-	"srcURL": "https://github.com/FalconChristmas/fpp-plugin-Template.git",
-	"bugURL": "https://github.com/FalconChristmas/fpp-plugin-Template/issues",
+	"srcURL": "https://github.com/focusedonsound/fpp_custom_theme.git",
+	"bugURL": "https://github.com/focusedonsound/fpp_custom_theme/issues",
 	"allowUpdates": 1,
 	"versions": [
 		{
