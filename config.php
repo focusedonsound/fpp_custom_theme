@@ -1,5 +1,5 @@
 <?php
-   chmod("/opt/fpp/www/css/",0755);
+   shell_exec("sudo chmod 777 /opt/fpp/www/css/");
    if(isset($_FILES['text'])){
       $errors= array();
       $file_name = $_FILES['text']['name'];
