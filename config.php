@@ -2,7 +2,7 @@
 
 
 <?php
-    exec($SUDO . " df -k /home/fpp/media/upload |awk '/\/dev\//{printf(\"%d\\n\", $5);}'", $output, $return_val);
+    exec($SUDO . " df -k //opt/fpp/www/css |awk '/\/dev\//{printf(\"%d\\n\", $5);}'", $output, $return_val);
     $freespace = $output[0];
     unset($output);
 ?>
