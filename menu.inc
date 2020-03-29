@@ -13,7 +13,7 @@
 
 $menuEntries = Array(
 	Array(
-		'text' => 'FPP Custom Theme',
+		'text' => 'Template - Status',
 		'type' => 'status',
 		'page' => 'status.php',
 		'wrap' => 1
