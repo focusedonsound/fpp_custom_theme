@@ -1,1 +1,1 @@
-<h2>The context-sensitive Help page for the plugin's content.php page</h2>
+<h2>Help page for FPP Custom Theme Plugin</h2>

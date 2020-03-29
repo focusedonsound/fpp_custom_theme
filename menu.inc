@@ -13,37 +13,37 @@
 
 $menuEntries = Array(
 	Array(
-		'text' => 'Template - Status',
+		'text' => 'Custom Theme - Status',
 		'type' => 'status',
 		'page' => 'status.php',
 		'wrap' => 1
 	),
 #	Array(
-#		'text' => 'Template - Content Setup',
+#		'text' => 'Custom Theme - Content Setup',
 #		'type' => 'content',
 #		'page' => 'content.php',
 #		'wrap' => 1
 #	),
 #	Array(
-#		'text' => 'Template - Output',
+#		'text' => 'Custom Theme - Output',
 #		'type' => 'output',
 #		'page' => 'output.php',
 #		'wrap' => 1
 #	),
 	Array(
-		'text' => 'Template - Help',
+		'text' => 'Custom Theme - Help',
 		'type' => 'help',
 		'page' => 'help/help.php',
 		'wrap' => 1
 	),
 	Array(
-		'text' => 'Template - Home',
+		'text' => 'Custom Theme - Home',
 		'type' => 'help',
 		'page' => 'https://github.com/focusedonsound/fpp_custom_theme',
 		'wrap' => 1
 	),
 	Array(
-		'text' => 'Template - About',
+		'text' => 'Custom Theme - About',
 		'type' => 'help',
 		'page' => 'about.php',
 		'wrap' => 1

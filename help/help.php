@@ -1,1 +1,1 @@
-Template Plugin Help Page Placeholder
+Custom Theme Plugin Help Page
