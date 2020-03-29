@@ -1,42 +1,91 @@
-<style>
-.title{text-align: center;}
-#dropzone{width: 100%; height: 50px; border: 2px solid green; text-align: center; line-height: 50px; margin-bottom: 20px;}
-th, td {width: 30%;}
-</style>
 <script>
-$('#fileupload').fileupload({
-    dataType: 'json',
-    dropZone: $('#dropzone'),
-    add: function (e, data) { 
-        var table= $('#fileTable');
-        table.show();
-        var tpl = $('<tr class="file">' +
-                    '<td class="fname"></td>' +
-                    '<td class="fsize"></td>' +
-                    '<td class="fact">' +
-                    '<a href="#" class="button rmvBtn"><i class="icon-cancel-2"></i> Cancel</a>' +
-                    '<a href="#" class="button uplBtn"><i class="icon-play-2"></i> Start</a>' +
-                    '</td></tr>');
-        tpl.find('.fname').text(data.files[0].name);
-        tpl.find('.fsize').text(data.files[0].size);
-        data.context = tpl.appendTo('#fileList');
-        
-        $('#start').click(function () {
-            //fix this?
-			</script>
-<h4 class="title"><i class="icon-chart-alt on-left"></i> blueimp/jQuery-File-Upload Test</h4>
-<form id="fileupload" action="/echo/jsonp/" method="POST" enctype="multipart/form-data">
-    <div id="dropzone">Drop your files here!</div>
-    <input type="file" multiple="" name="files[]" />
-    <input id="start" type="submit" value="Start upload" />
-    <input id="cancel" type="reset" value="Cancel upload" />
-</form>
-     <table id="fileTable" style="display: none;">
-         <thead>
-             <tr><th>File Name</th><th>Size</th><th>&nbsp</th></tr>
-         </thead>
-         <tbody id="fileList">
+var files;
 
-         </tbody>
-         <tfoot><tr><td id="result"></td><td>&nbsp</td><td>&nbsp</td></tr></tfoot>
-    </table>
+// Add events
+$('input[type=file]').on('change', prepareUpload);
+
+// Grab the files and set them to our variable
+function prepareUpload(event) {
+  files = event.target.files;
+}
+
+$('form').on('submit', uploadFiles);
+
+// Catch the form submit and upload the files
+function uploadFiles(event) {
+    event.stopPropagation(); // Stop stuff happening
+    event.preventDefault(); // Totally stop stuff happening
+
+    // START A LOADING SPINNER HERE
+    // Create a formdata object and add the files
+    var data = new FormData();
+    $.each(files, function(key, value) {
+        data.append(key, value);
+    });
+
+    $.ajax({
+        url: 'submit.php?files',
+        type: 'POST',
+        data: data,
+        cache: false,
+        dataType: 'json',
+        processData: false, // Don't process the files
+        contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+        success: function(data, textStatus, jqXHR) {
+            if(typeof data.error === 'undefined') {
+                // Success so call function to process the form
+                submitForm(event, data);
+            }
+            else {
+                // Handle errors here
+                console.log('ERRORS: ' + data.error);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            // Handle errors here
+            console.log('ERRORS: ' + textStatus);
+            // STOP LOADING SPINNER
+        }
+    });
+}
+
+function submitForm(event, data) {
+  // Create a jQuery object from the form
+    $form = $(event.target);
+    // Serialize the form data
+    var formData = $form.serialize();
+    // You should sterilise the file names
+    $.each(data.files, function(key, value) {
+        formData = formData + '&filenames[]=' + value;
+    });
+
+    $.ajax({
+        url: 'submit.php',
+        type: 'POST',
+        data: formData,
+        cache: false,
+        dataType: 'json',
+        success: function(data, textStatus, jqXHR) {
+            if(typeof data.error === 'undefined') {
+                // Success so call function to process the form
+                console.log('SUCCESS: ' + data.success);
+            }
+            else {
+                // Handle errors here
+                console.log('ERRORS: ' + data.error);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            // Handle errors here
+            console.log('ERRORS: ' + textStatus);
+        },
+        complete: function() {
+            // STOP LOADING SPINNER
+        }
+    });
+}
+</script>
+<form>
+    <input type="file"/>
+    <input type="submit" value="upload" />
+</form>
