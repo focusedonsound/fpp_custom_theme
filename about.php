@@ -9,7 +9,7 @@
         Nick Scilingo (Focusedonsound)<br />
 		<br />
         <a href='https://github.com/focusedonsound/fpp_custom_theme'>Git Repository</a><br>
-        <a href='https://github.com/FalconChristmas/fpp-plugin-Template/issues'>Bug Reporter</a><br>
+        <a href='https://github.com/focusedonsound/fpp_custom_theme/issues'>Bug Reporter</a><br>
 		<br />
       </div>
     </div>

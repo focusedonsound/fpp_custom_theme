@@ -13,13 +13,13 @@
 
 $menuEntries = Array(
 	Array(
-		'text' => 'Custom Theme - Status',
+		'text' => 'Custom Theme',
 		'type' => 'status',
 		'page' => 'status.php',
 		'wrap' => 1
 	),
 #	Array(
-#		'text' => 'Custom Theme - Content Setup',
+#		'text' => 'Custom Theme Setup',
 #		'type' => 'content',
 #		'page' => 'content.php',
 #		'wrap' => 1
