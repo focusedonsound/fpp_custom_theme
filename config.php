@@ -1,11 +1,11 @@
 <?php
    if(isset($_FILES['text'])){
       $errors= array();
-      $file_name = $_FILES['image']['name'];
-      $file_size = $_FILES['image']['size'];
-      $file_tmp = $_FILES['image']['tmp_name'];
-      $file_type = $_FILES['image']['type'];
-      $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+      $file_name = $_FILES['text']['name'];
+      $file_size = $_FILES['text']['size'];
+      $file_tmp = $_FILES['text']['tmp_name'];
+      $file_type = $_FILES['text']['type'];
+      $file_ext=strtolower(end(explode('.',$_FILES['text']['name'])));
       
       $extensions= array("CSS","jpg","png");
       
@@ -29,13 +29,13 @@
    <body>
       
       <form action = "" method = "POST" enctype = "multipart/form-data">
-         <input type = "file" name = "image" />
+         <input type = "file" name = "text" />
          <input type = "submit"/>
 			
          <ul>
-            <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
-            <li>File size: <?php echo $_FILES['image']['size'];  ?>
-            <li>File type: <?php echo $_FILES['image']['type'] ?>
+            <li>Sent file: <?php echo $_FILES['text']['name'];  ?>
+            <li>File size: <?php echo $_FILES['text']['size'];  ?>
+            <li>File type: <?php echo $_FILES['text']['type'] ?>
          </ul>
 			
       </form>
