@@ -3,7 +3,7 @@
 //$pages = Array(
 //	'name' => "Custom Theme",
 //	'type' => "status",
-//	'page' => "plugin_setup.php");
+//	'page' => "config.php");
 //
 ?>
 
