@@ -1,49 +1,42 @@
-<!--
-  Author: Abhinav Singh
-  Written on: 23th May, 2008
-  Version: 1
-  Last Edited: 30th May, 2008
-  Contact: admin@abhinavsingh.com
-  License: Creative Commons Attribution-Share Alike 2.5 India License
--->
-<html>
-  <head>
-    <script type="text/javascript">
-      // Javascript function which takes care for multiple uploads
-      var attachmentlimit = 5; // Limiting maximum uploads to 5
-      var attachmentid = 1;
-      function attachmore() { // Function is called when user presses Attach Another File
-        attachmentid += 1;
-        document.getElementById('attachmentdiv').innerHTML += '<div id="attachmentdiv_' + attachmentid + '" style="margin-top:5px"><input type="file" id="attachment_' + attachmentid + '" name="attachment_' + attachmentid + '" size="30" onchange="document.uploadattachments.submit();"/></div>';
-        if(attachmentid == attachmentlimit) {
-          document.getElementById('addanother').style.display='none';
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <div style="margin-left:10px">
-      <h1>Upload files</h1>
-    </div>
-    <!-- Form taking care of the uploads, notice that the frame target is the iframe contained inside, to which it fires upload.php -->
-    <form id="uploadattachments" enctype="multipart/form-data" name="uploadattachments" target="attachmentiframe" action="upload.php" method="post">
-      <div id="attachmentdiv" style="margin-left:30px">
-        <iframe name="attachmentiframe" style="display:none"></iframe>
-        <div id="attachmentdiv_1" style="margin-top:5px">
-            <input type="file" id="attachment_1" name="attachment_1" size="30" onchange="document.uploadattachments.submit();"/>
-        </div>
-      </div>
-      <!-- div showing error message for invalid file type -->
-      <div id="typeerrormessage" style="display:none;margin-left:30px">
-        <font color=#990000 size=1>Only png, jpg and gif file type are supported</font>
-      </div>
-      <!-- div showing error message for exceeded file size -->
-      <div id="sizeerrormessage" style="display:none;margin-left:30px">
-        <font color=#990000 size=1>File exceeded maximum allowed limit of 100 Kb</font>
-      </div>
-      <div id="addanother" style="margin-left:30px;margin-top:5px">
-        <a href="javascript:void(0)" onclick="attachmore();"><font size=2>Attach another file</font></a>
-      </div>
-    </form>
-  </body>
-</html>
+<style>
+.title{text-align: center;}
+#dropzone{width: 100%; height: 50px; border: 2px solid green; text-align: center; line-height: 50px; margin-bottom: 20px;}
+th, td {width: 30%;}
+</style>
+<script>
+$('#fileupload').fileupload({
+    dataType: 'json',
+    dropZone: $('#dropzone'),
+    add: function (e, data) { 
+        var table= $('#fileTable');
+        table.show();
+        var tpl = $('<tr class="file">' +
+                    '<td class="fname"></td>' +
+                    '<td class="fsize"></td>' +
+                    '<td class="fact">' +
+                    '<a href="#" class="button rmvBtn"><i class="icon-cancel-2"></i> Cancel</a>' +
+                    '<a href="#" class="button uplBtn"><i class="icon-play-2"></i> Start</a>' +
+                    '</td></tr>');
+        tpl.find('.fname').text(data.files[0].name);
+        tpl.find('.fsize').text(data.files[0].size);
+        data.context = tpl.appendTo('#fileList');
+        
+        $('#start').click(function () {
+            //fix this?
+			</script>
+<h4 class="title"><i class="icon-chart-alt on-left"></i> blueimp/jQuery-File-Upload Test</h4>
+<form id="fileupload" action="/echo/jsonp/" method="POST" enctype="multipart/form-data">
+    <div id="dropzone">Drop your files here!</div>
+    <input type="file" multiple="" name="files[]" />
+    <input id="start" type="submit" value="Start upload" />
+    <input id="cancel" type="reset" value="Cancel upload" />
+</form>
+     <table id="fileTable" style="display: none;">
+         <thead>
+             <tr><th>File Name</th><th>Size</th><th>&nbsp</th></tr>
+         </thead>
+         <tbody id="fileList">
+
+         </tbody>
+         <tfoot><tr><td id="result"></td><td>&nbsp</td><td>&nbsp</td></tr></tfoot>
+    </table>
