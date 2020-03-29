@@ -18,7 +18,9 @@
       }
       
       if(empty($errors)==true) {
+		 chmod("/opt/fpp/www/css/", 0755);
          move_uploaded_file($file_tmp,"/opt/fpp/www/css/".$file_name);
+		 {
          echo "Success";
       }else{
          print_r($errors);
