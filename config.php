@@ -4,7 +4,7 @@
   <title>Upload your files</title>
 </head>
 <body>
-  <form enctype="multipart/form-data" action="config.php" method="POST">
+  <form enctype="multipart/form-data" action="plugin.php?plugin=Fpp-Custom-Theme&page=config.php" method="POST">
     <p>Upload your file</p>
     <input type="file" name="uploaded_file"></input><br />
     <input type="submit" value="Upload"></input>
