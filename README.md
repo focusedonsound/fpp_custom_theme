@@ -1,3 +1,3 @@
-# fpp-plugin-Template
-Template plugin for FPP Plugin developers
+# fpp-custom-theme
+This plugin allows for custom themes in Falcon Pi Player
 
