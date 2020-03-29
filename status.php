@@ -1,1 +1,1 @@
-Template Plugin Status Page Placeholder
+Custom Theme Base Placeholder
