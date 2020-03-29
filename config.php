@@ -1,91 +1,56 @@
-<script>
-var files;
+<!DOCTYPE html>
+<html>
 
-// Add events
-$('input[type=file]').on('change', prepareUpload);
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mini Ajax File Upload Form</title>
 
-// Grab the files and set them to our variable
-function prepareUpload(event) {
-  files = event.target.files;
-}
+		<!-- Google web fonts -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
 
-$('form').on('submit', uploadFiles);
+		<!-- The main CSS file -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
 
-// Catch the form submit and upload the files
-function uploadFiles(event) {
-    event.stopPropagation(); // Stop stuff happening
-    event.preventDefault(); // Totally stop stuff happening
+	<body>
 
-    // START A LOADING SPINNER HERE
-    // Create a formdata object and add the files
-    var data = new FormData();
-    $.each(files, function(key, value) {
-        data.append(key, value);
-    });
+		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+			<div id="drop">
+				Drop Here
 
-    $.ajax({
-        url: 'submit.php?files',
-        type: 'POST',
-        data: data,
-        cache: false,
-        dataType: 'json',
-        processData: false, // Don't process the files
-        contentType: false, // Set content type to false as jQuery will tell the server its a query string request
-        success: function(data, textStatus, jqXHR) {
-            if(typeof data.error === 'undefined') {
-                // Success so call function to process the form
-                submitForm(event, data);
-            }
-            else {
-                // Handle errors here
-                console.log('ERRORS: ' + data.error);
-            }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            // Handle errors here
-            console.log('ERRORS: ' + textStatus);
-            // STOP LOADING SPINNER
-        }
-    });
-}
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
 
-function submitForm(event, data) {
-  // Create a jQuery object from the form
-    $form = $(event.target);
-    // Serialize the form data
-    var formData = $form.serialize();
-    // You should sterilise the file names
-    $.each(data.files, function(key, value) {
-        formData = formData + '&filenames[]=' + value;
-    });
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
 
-    $.ajax({
-        url: 'submit.php',
-        type: 'POST',
-        data: formData,
-        cache: false,
-        dataType: 'json',
-        success: function(data, textStatus, jqXHR) {
-            if(typeof data.error === 'undefined') {
-                // Success so call function to process the form
-                console.log('SUCCESS: ' + data.success);
-            }
-            else {
-                // Handle errors here
-                console.log('ERRORS: ' + data.error);
-            }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            // Handle errors here
-            console.log('ERRORS: ' + textStatus);
-        },
-        complete: function() {
-            // STOP LOADING SPINNER
-        }
-    });
-}
-</script>
-<form>
-    <input type="file"/>
-    <input type="submit" value="upload" />
-</form>
+		</form>
+
+		<footer>
+            <h2><a href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/"><i>Tutorial:</i> Mini Ajax File Upload Form</a></h2>
+            <div id="tzine-actions">
+            	
+	            <a id="tzine-download" href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/" title="Download This Example!">Download</a>
+            </div>
+        </footer>
+        
+		<!-- JavaScript Includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.knob.js"></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src="assets/js/jquery.ui.widget.js"></script>
+		<script src="assets/js/jquery.iframe-transport.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		
+		<!-- Our main JS file -->
+		<script src="assets/js/script.js"></script>
+
+
+		<!-- Only used for the demos. Please ignore and remove. --> 
+        <script src="http://cdn.tutorialzine.com/misc/enhance/v1.js" async></script>
+
+	</body>
+</html>
