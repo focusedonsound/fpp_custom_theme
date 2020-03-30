@@ -9,6 +9,7 @@
       text-align: center;
       
       color:#313131;
+      position: absolute;
       -webkit-animation:colorchange 20s infinite alternate;
       
       
