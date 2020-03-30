@@ -9,9 +9,6 @@
       text-align: center;
       
       color:#313131;
-      font-size:45px;
-      font-weight: bold;
-      position: absolute;
       -webkit-animation:colorchange 20s infinite alternate;
       
       
