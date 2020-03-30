@@ -1,5 +1,5 @@
 <?php
-   shell_exec("sudo chmod 777 /opt/fpp/www/css/");
+   shell_exec("sudo chmod 777 /home/fpp/media/plugins/Fpp-Custom-Theme/uploads/");
    if(isset($_FILES['text'])){
       $errors= array();
       $file_name = $_FILES['text']['name'];
@@ -19,7 +19,7 @@
       }
       
       if(empty($errors)==true) {
-         move_uploaded_file($file_tmp,"/opt/fpp/www/css/".$file_name);
+         move_uploaded_file($file_tmp,"/home/fpp/media/plugins/Fpp-Custom-Theme/uploads/".$file_name);
          echo "Success";
       }else{
          print_r($errors);
