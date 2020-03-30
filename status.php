@@ -1,15 +1,16 @@
 <style>
+.ctstable {
+	border:1px solid black;
+	margin-left:auto;
+	margin-right:auto;
+}
 .ctsHeader {
- font-family: futura;
-      font-style: italic;
-      
+font-family: futura;
+      font-style: italic;    
       width:100%;
-      
       margin: 0 auto;
       text-align: center;
-      
       color:#313131;
-      position: absolute;
       -webkit-animation:colorchange 20s infinite alternate;
       
       
@@ -72,7 +73,7 @@
     }
 }
 </style>
-<table>
+<table class="ctstable">
 <tbody>
 <tr>
 <td class="ctsHeader"><h1>Custom Theme </br> Attributes applied in custom.css</h1></td>
