@@ -100,7 +100,7 @@ font-family: futura;
     <table class="ctstable">
 <tbody>
 <tr>
-<td class="ctsHeader">Custom Theme </br> Upload Your custom.css or custom.js files.</td>
+<td class="ctsHeader"><h1>Custom Theme </br> Upload Your custom.css or custom.js files.</h1></td>
 <td class="ctsHeader"></td>
 </tr>
 <tr>
