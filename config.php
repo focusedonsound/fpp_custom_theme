@@ -8,7 +8,7 @@
       $file_type = $_FILES['text']['type'];
       $file_ext=strtolower(end(explode('.',$_FILES['text']['name'])));
       
-      $extensions= array("CSS","jpg","png");
+      $extensions= array("css","jpg","png");
       
       if(in_array($file_ext,$extensions)=== false){
          $errors[]="extension not allowed, please choose a JPEG or PNG file.";
