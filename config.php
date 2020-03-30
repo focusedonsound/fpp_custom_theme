@@ -1,4 +1,9 @@
 <style>
+.ctstable {
+	border:1px solid black;
+	margin-left:auto;
+	margin-right:auto;
+}
 .ctsHeader {
 font-family: futura;
       font-style: italic;    
