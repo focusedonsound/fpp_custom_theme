@@ -27,10 +27,25 @@
 ?>
 <html>
    <body>
-      
-      <form action = "" method = "POST" enctype = "multipart/form-data">
-         <input type = "file" name = "text" />
-         <input type = "submit"/>
+    <table>
+<tbody>
+<tr>
+<td>      <form action = "" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "text" /></td>
+<td><input type = "submit"/></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>  
+
+         
 			
          <ul>
             <li>Sent file: <?php echo $_FILES['text']['name'];  ?>
