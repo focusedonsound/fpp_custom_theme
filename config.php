@@ -100,8 +100,8 @@ font-family: futura;
     <table class="ctstable">
 <tbody>
 <tr>
-<td class="ctsHeader">Custom Theme</td>
-<td class="ctsHeader">Upload Your custom.css or custom.js files.</td>
+<td class="ctsHeader">Custom Theme </br> Upload Your custom.css or custom.js files.</td>
+<td class="ctsHeader"></td>
 </tr>
 <tr>
 <td>      <form action = "" method = "POST" enctype = "multipart/form-data">
