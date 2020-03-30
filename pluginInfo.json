@@ -1,8 +1,8 @@
 {
 	"repoName": "Fpp-Custom-Theme",
-	"name": "Custom Theme Plugin for custom FPP themes",
+	"name": "Custom Theme Plugin For FPP",
 	"author": "Nick Scilingo (focusedonsound)",
-	"description": "This plugin was designed to custimize the look and feel of FPP to match your lightshow",
+	"description": "This plugin was designed to allow you to easilly custimize the look and feel of FPP to match your lightshow",
 	"homeURL": "https://github.com/focusedonsound/fpp_custom_theme",
 	"srcURL": "https://github.com/focusedonsound/fpp_custom_theme.git",
 	"bugURL": "https://github.com/focusedonsound/fpp_custom_theme/issues",
