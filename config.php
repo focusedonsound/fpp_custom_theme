@@ -3,6 +3,7 @@
 	border:1px solid black;
 	margin-left:auto;
 	margin-right:auto;
+	width: 50%;
 }
 .ctsHeader {
 font-family: futura;
@@ -111,7 +112,7 @@ font-family: futura;
 <tr>
 <td>      <form action = "" method = "POST" enctype = "multipart/form-data">
          <input type = "file" name = "text" /></td>
-<td> <input type = "submit"/></td>
+<td> <input type = "submit" value="Upload"/></td>
 </tr>
 <tr>
 <td><ul>
