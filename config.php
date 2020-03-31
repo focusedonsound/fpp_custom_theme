@@ -86,7 +86,7 @@ font-family: futura;
       $extensions= array("css","js","gif","jpg","png");
       
       if(in_array($file_ext,$extensions)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+         $errors[]="extension not allowed, please choose a css, js, gif, jpg or png file.";
       }
       
       if($file_size > 2097152) {
