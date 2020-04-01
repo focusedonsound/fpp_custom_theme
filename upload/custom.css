@@ -1,7 +1,394 @@
+@import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
 .header {
 	background-color: rgb(240, 240,240);
 	}
-html
-{
+fieldset {
+	width: 75%
+}
+div#programControl.settings {
+	width: 80%;
+}
+fieldset#progrsamControl  {
+	width: 80%;
+}
+html {
 	background: rgb(240, 240,240);
+}
+.sm-clean a .sub-arrow:after {
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f150";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+   top: 0%;
+    margin-top: 0px;
+    right: 20px;
+    width: 0;
+    height: 0;
+	position: absolute;
+	    border-width: 4px;
+}
+.sm-clean a .sub-arrow {
+		all: unset !important;
+}
+.sm-clean li {
+	float: none !important;
+}
+#fppMenu > li {
+	width: auto;
+}
+#fppMenu {
+	width: 20%;
+	float: left;
+}
+#fileManager {
+	display: inline-block;
+    float: right;
+	width: 78%;
+}
+.settings {
+	display: inline-block;
+    float: right;
+	width: 78%;
+}
+#footer {
+	float: left;
+	width: 75% !important;
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+}
+.fppTableWrapperAsTable {
+	display: grid;
+}
+.fppTabs {
+	display: inline-block;
+    width: 75%;
+    padding-left: 10px;
+}
+.helpLinkDiv {
+	display: none;
+}
+.pageContent {
+	width: 75% !important;
+	padding-left: 10px;
+	display: inline-block;
+	float: left;
+}
+#fppMenu li {
+	text-align: left !important;
+}
+.sm-clean ul {
+    position: initial !important;
+}
+#fppMenu li ul {
+	display:block;
+	width: auto;
+}
+#channelTester {
+	width: 75%;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+#channelOutputManager {
+	width: 75%;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+.header {
+	height: 100px;
+}
+.header::before {
+	content: "";
+    display: block;/*missing prop*/
+  background-image: url(https://christmasinboontontwp.com/wp-content/uploads/2018/10/cropped-Christmas-logoPNGWEB-COLOR-2.png), url(https://christmasinboontontwp.com/wp-content/themes/cheer/img/presentsbg.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, 50% ;
+	position: relative;
+	background-position: left, center;
+	height: 100px;
+	z-index:1;
+}
+/*adjusting header*/
+	.headerCenter {
+	width: 60%;
+    text-align: right;
+    float: right;
+    position: relative;
+    bottom: 74px;
+    z-index: 5;
+}
+.headerLeft {
+	display:none;
+}
+.headerRight  {
+	display:none;
+}	
+a[href="index.php"]:before{
+   content: "\f129";
+   font-family: "Font Awesome\ 5 Free" !important;
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="networkconfig.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f6ff";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="multisync.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f021";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="settings.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f085";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="backup.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f7c4";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="proxies.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0ac";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="events.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f073";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=4"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0d0";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="effects.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0d0";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="testing.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f46c";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=status.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f093";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=0"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f093";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=1"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f001";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=2"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f03d";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=5"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f70e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="playlists.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0cb";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="scheduler.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f017";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="scriptbrowser.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f70e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugins.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f12e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=config.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="channelinputs.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f542";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+   color:red;
+}
+a[href="channeloutputs.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f542";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+   color: green;
+}
+a[href="outputprocessors.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f2db";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="pixeloverlaymodels.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f1b3";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 1000;
+}
+a[href="gpio.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f362";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="https://docs.google.com/viewer?url=https://falconchristmas.github.io/FPP_Manual.pdf"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f02d";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="http://falconchristmas.com/wiki/index.php/Falcon_FPP"]:before{
+   font-family: "Font Awesome 5 Brands" !important;
+   content: "\f266";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="help.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f059";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="cliHelp.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f1cd";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="troubleshooting.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f972";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="http://192.168.0.220:4200"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f120";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="about.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f05a";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="credits.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f550";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=help/help.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="https://github.com/focusedonsound/fpp_custom_theme"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=about.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+#fppMenu a: hover{
+	cursor: pointer;
 }

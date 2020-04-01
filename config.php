@@ -3,7 +3,7 @@
 	border:1px solid black;
 	margin-left:auto;
 	margin-right:auto;
-	width: 50%;
+	width: 75%;
 }
 .ctsHeader {
 font-family: futura;
