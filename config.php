@@ -81,7 +81,10 @@ font-family: futura;
 <tbody>
 <tr>
 <td class="ctsHeader"><h1>Custom Theme </br> Upload Your custom.css or custom.js files.</h1></td>
-<td class="ctsHeader"><?php
+<td class="ctsHeader"></td>
+</tr>
+<tr>
+<td><?php
    if(isset($_FILES['text'])){
       $errors= array();
       $file_name = $_FILES['text']['name'];
@@ -107,7 +110,9 @@ font-family: futura;
          print_r($errors);
       }
    }
-?></td>
+?>
+</td>
+<td></td>
 </tr>
 <tr>
 <td>      <form action = "" method = "POST" enctype = "multipart/form-data">
