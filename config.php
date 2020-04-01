@@ -84,7 +84,7 @@ font-family: futura;
 <td class="ctsHeader"></td>
 </tr>
 <tr>
-<td><?php
+<td class="ctsHeader"><?php
    if(isset($_FILES['text'])){
       $errors= array();
       $file_name = $_FILES['text']['name'];
