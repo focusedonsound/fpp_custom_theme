@@ -1,18 +1,94 @@
 @import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
+.siteName {
+	font-family: none !important;
+    font-style: normal !important;
+    text-align: right !important;
+}
+.ctsHeader, .siteName {
+font-family: futura;
+      font-style: italic;    
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      color:#313131;
+      -webkit-animation:colorchange 15s infinite alternate;
+      
+      
+    }
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+}
 .ctstable {
 	width: 75%;
 }
 .header {
 	background-color: rgb(240, 240,240);
+	padding: 0%;
 	}
+fieldset[style*="padding: 10px"] {
+	width: 75% !important;
+}
 fieldset {
-	width: 75%
+	border: none !important;
 }
-div#programControl.settings {
-	width: 80%;
+div#programControl {
+	width: 80% !important;
 }
-fieldset#progrsamControl  {
-	width: 80%;
+#progrsamControl fieldset {
+	width: 80% !important;
 }
 html {
 	background: rgb(240, 240,240);
@@ -345,7 +421,7 @@ a[href="cliHelp.php"]:before{
 }
 a[href="troubleshooting.php"]:before{
    font-family: "Font Awesome 5 Free" !important;
-   content: "\f972";
+   content: "\f71e";
    display: inline-block;
    padding-right: 10px;
    font-weight: 900;
