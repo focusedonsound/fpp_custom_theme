@@ -7,6 +7,7 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	width: 75%;
+	color:cccccc;
 }
 .ctsHeader {
 font-family: futura;
