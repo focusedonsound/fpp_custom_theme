@@ -8,8 +8,11 @@ body, #fppMenu, #fppMenu li a {
 html, #bodyWrapper  {
 	background: rgb(22, 29, 32);
 }
-td.ctscontent, body, pre {
+td.ctscontent, body {
 	color: #cccccc;
+}
+pre {
+	color: #cccccc !important;
 }
 a.nonULLink {
 	font-family: none !important;
