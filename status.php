@@ -7,7 +7,7 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	width: 75%;
-	color:cccccc;
+	color: #cccccc;
 }
 td.ctstable{
 	color: #cccccc;
