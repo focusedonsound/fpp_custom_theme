@@ -82,7 +82,7 @@ font-family: futura;
 <td class="ctsHeader"><h1>Custom Theme </br> Attributes applied in custom.css</h1></td>
 </tr>
 <tr>
-<td class="ctscontent"><iframe class="customcss" src="/api/configfile/custom.css" frameborder="0" height="400"
+<td class="ctscontent" style="color: #cccccc;"><iframe class="customcss" src="/api/configfile/custom.css" frameborder="0" height="400"
       width="95%"></iframe></td>
 </tr>
 </tbody>
