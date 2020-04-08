@@ -9,6 +9,9 @@ body {
 	width: 75%;
 	color:cccccc;
 }
+td.ctstable{
+	color: #cccccc;
+}
 .ctsHeader {
 font-family: futura;
       font-style: italic;    

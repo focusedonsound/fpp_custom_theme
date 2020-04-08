@@ -8,7 +8,7 @@ body, #fppMenu, #fppMenu li a {
 html, #bodyWrapper  {
 	background: rgb(22, 29, 32);
 }
-td.ctscontent, body {
+body.ctscontent {
 	color: #cccccc;
 }
 pre {
