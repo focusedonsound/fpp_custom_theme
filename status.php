@@ -1,4 +1,7 @@
 <style>
+body {
+	color: #cccccc;
+}
 .ctstable {
 	border:1px solid black;
 	margin-left:auto;

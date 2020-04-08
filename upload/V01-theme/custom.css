@@ -1,0 +1,554 @@
+@import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@@200;300;400;469;500;600;700&display=swap');
+body, #fppMenu, #fppMenu li a {
+	font-family: 'Oswald', sans-serif !important;
+	font-weight: 400;
+}
+.siteName {
+	font-family: none !important;
+    font-style: normal !important;
+    text-align: right !important;
+}
+.ctsHeader, .siteName {
+font-family: futura;
+      font-style: italic;    
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      color:#313131;
+      -webkit-animation:colorchange 15s infinite alternate;
+      
+      
+    }
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+}
+.ctstable {
+	width: 75%;
+}
+.header {
+	background-color: rgb(240, 240,240);
+	padding: 0%;
+	}
+fieldset[style*="padding: 10px"] {
+	width: 75% !important;
+}
+fieldset {
+	border: none !important;
+}
+div#programControl {
+	width: 80% !important;
+}
+#progrsamControl fieldset {
+	width: 80% !important;
+}
+html {
+	background: rgb(240, 240,240);
+}
+.sm-clean a .sub-arrow:after {
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f150";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+   top: 0%;
+    margin-top: 0px;
+    right: 20px;
+    width: 0;
+    height: 0;
+	position: absolute;
+	    border-width: 4px;
+}
+.sm-clean a .sub-arrow {
+		all: unset !important;
+}
+.sm-clean li {
+	float: none !important;
+}
+#fppMenu > li {
+	width: auto;
+}
+#fppMenu {
+	width: 20%;
+	float: left;
+}
+#fileManager {
+	display: inline-block;
+    float: right;
+	width: 78%;
+}
+.settings {
+	display: inline-block;
+    float: right;
+	width: 78%;
+}
+#footer {
+	float: left;
+	width: 75% !important;
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+}
+.fppTableWrapperAsTable {
+	display: grid;
+}
+.fppTabs {
+	display: inline-block;
+    width: 75%;
+    padding-left: 10px;
+}
+.helpLinkDiv {
+	display: none;
+}
+.pageContent {
+	width: 75% !important;
+	padding-left: 10px;
+	display: inline-block;
+	float: left;
+}
+#fppMenu li {
+	text-align: left !important;
+}
+.sm-clean ul {
+    position: initial !important;
+}
+#fppMenu li ul {
+	display:block;
+	width: auto;
+}
+#channelTester {
+	width: 75%;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+#channelOutputManager {
+	width: 75%;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+.header {
+	height: 100px;
+}
+.header::before {
+	content: "";
+    display: block;/*missing prop*/
+  background-image: url(https://christmasinboontontwp.com/wp-content/uploads/2018/10/cropped-Christmas-logoPNGWEB-COLOR-2.png), url(https://christmasinboontontwp.com/wp-content/themes/cheer/img/presentsbg.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, 50% ;
+	position: relative;
+	background-position: left, center;
+	height: 100px;
+	z-index:1;
+}
+/*adjusting header*/
+	.headerCenter {
+	width: 60%;
+    text-align: right;
+    float: right;
+    position: relative;
+    bottom: 74px;
+    z-index: 5;
+}
+.headerLeft {
+	display:none;
+}
+.headerRight  {
+	display:none;
+}	
+a[href="index.php"]:before{
+   content: "\f129";
+   font-family: "Font Awesome\ 5 Free" !important;
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="networkconfig.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f6ff";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="multisync.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f021";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="settings.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f085";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="backup.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f7c4";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="proxies.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0ac";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="events.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f073";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=4"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0d0";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="effects.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0d0";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="testing.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f46c";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=status.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f093";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=0"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f093";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=1"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f001";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=2"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f03d";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="uploadfile.php?tab=5"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f70e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="playlists.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f0cb";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="scheduler.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f017";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="scriptbrowser.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f70e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugins.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f12e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=config.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="channelinputs.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f542";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+   color:red;
+}
+a[href="channeloutputs.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f542";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+   color: green;
+}
+a[href="outputprocessors.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f2db";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="pixeloverlaymodels.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f1b3";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 1000;
+}
+a[href="gpio.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f362";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="https://docs.google.com/viewer?url=https://falconchristmas.github.io/FPP_Manual.pdf"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f02d";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="http://falconchristmas.com/wiki/index.php/Falcon_FPP"]:before{
+   font-family: "Font Awesome 5 Brands" !important;
+   content: "\f266";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="help.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f059";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="cliHelp.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f1cd";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="troubleshooting.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f71e";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="http://192.168.0.220:4200"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f120";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="about.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f05a";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="credits.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f550";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=help/help.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="https://github.com/focusedonsound/fpp_custom_theme"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+a[href="plugin.php?plugin=Fpp-Custom-Theme&page=about.php"]:before{
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f53f";
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: 900;
+}
+#fppMenu a: hover{
+	cursor: pointer;
+}
+.buttons::-moz-focus-inner{
+  border: 0;
+  padding: 0;
+}
+
+.buttons{
+  display: inline-block !important;
+  display: inline !important;
+  zoom: 1;
+  padding: 0px 10px!important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  border: 1px solid #bbb !important;
+  overflow: visible !important;
+  font: bold 11px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  color: #555 !important;
+  
+  background-color: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -ms-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  background-clip: padding-box; /* Fix bleeding */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buttons:hover{
+  background-color: #eee;
+  color: #555;
+}
+
+.buttons:active{
+  background: #e9e9e9;
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.buttons[disabled], .button[disabled]:hover, .button[disabled]:active{
+  border-color: #eaeaea;
+  background: #fafafa;
+  cursor: default;
+  position: static;
+  color: #999;
+  /* Usually, !important should be avoided but here it's really needed :) */
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
