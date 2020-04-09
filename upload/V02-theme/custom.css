@@ -138,7 +138,23 @@ div#programControl {
 #progrsamControl fieldset {
 	width: 80% !important;
 }
+/*Start adjusting fppMenu*/
 .sm-clean a .sub-arrow:after {
+   font-family: "Font Awesome 5 Free" !important;
+   content: "\f150";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+   top: 0%;
+    margin-top: 0px;
+    right: 20px;
+    width: 0;
+    height: 0;
+	position: absolute;
+	    border-width: 4px;
+}
+.sm-clean a .sub-arrow:before {
    font-family: "Font Awesome 5 Free" !important;
    content: "\f150";
    display: inline-block;
@@ -159,6 +175,7 @@ div#programControl {
 .sm-clean li {
 	float: none !important;
 }
+
 #fppMenu > li {
 	width: auto;
 }
@@ -172,6 +189,10 @@ div#programControl {
 	width: 20%;
 	float: left;
 }
+#fppMenu a: hover{
+	cursor: pointer;
+}
+/*end adjusting fppMenu*/
 #fileManager {
 	display: inline-block;
     float: right;
@@ -491,9 +512,6 @@ a[href="plugin.php?plugin=Fpp-Custom-Theme&page=about.php"]:before{
    font-weight: 900;
 }
 /* end menu icons*/
-#fppMenu a: hover{
-	cursor: pointer;
-}
 .buttons::-moz-focus-inner{
   border: 0;
   padding: 0;
@@ -505,14 +523,14 @@ a[href="plugin.php?plugin=Fpp-Custom-Theme&page=about.php"]:before{
   padding: 0px 10px!important;
   margin: 0 !important;
   cursor: pointer !important;
-  border: 1px solid #bbb !important;
+  border: 1px solid #99aab5 !important;
   overflow: visible !important;
   font: bold 11px !important;
   text-decoration: none !important;
   white-space: nowrap !important;
   color: #555 !important;
   
-  background-color: #ddd;
+  background-color: #7289da;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
   background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
@@ -542,7 +560,7 @@ a[href="plugin.php?plugin=Fpp-Custom-Theme&page=about.php"]:before{
   user-select: none;
 }
 .buttons:hover{
-  background-color: #eee;
+  background-color: #7289da;
   color: #555;
 }
 .buttons:active{
